@@ -1,0 +1,24 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    /* Establece el cuerpo y el HTML para ocupar la altura completa de la 
+    ventana del navegador, sin margen ni relleno, y oculta cualquier desbordamiento */
+}
+
+#myCanvas {
+    display: block;
+    margin: 0 auto;
+    /* Centra el canvas horizontalmente y lo 
+    configura para mostrar como un bloque */
+}
+
+@media screen and (max-width: 768px) {
+    #myCanvas {
+        width: 100vw;
+        height: 100vh;
+    }
+    /* Ajusta el tamaño del canvas a la altura y 
+    anchura de la ventana gráfica en dispositivos de pantalla pequeña */
+}
